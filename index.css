@@ -4,6 +4,10 @@
   --secondary: #6c757d;
   --dark: #343a40;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 62.5px; /* to check navbar height use developer tools of google */
+}
 
 * {
   margin: 0 !important;
