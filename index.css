@@ -9,11 +9,6 @@ html {
   scroll-padding-top: 62.5px; /* to check navbar height use developer tools of google */
 }
 
-* {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 #home {
   height: 100vh;
   position: relative;
@@ -46,6 +41,10 @@ html {
   color: var(--light) !important;
 }
 
+.navbar-toggler-icon {
+  background-image: url(images/svg-logo/menu-outline.svg) !important;
+}
+
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -58,32 +57,11 @@ body::-webkit-scrollbar-thumb {
   background: #55535e;
 }
 
-@media screen and (min-width: 960px) {
-  .embed-responsive {
-    height: 80vh !important;
-  }
-}
-
-.min-vh-90 {
-  min-height: 90vh;
-}
-.tools-logo {
-  width: 50px;
-}
-
-.collapse {
-  transition: ease;
-}
-
 .custom-shadow {
   border: #343a40 !important;
   box-shadow: 0px 0px 25px 0px rgba(-1, -1, 0, 0.75) inset;
   -webkit-box-shadow: 0px 0px 25px 0px rgba(-1, -1, 0, 0.75) inset;
   -moz-box-shadow: 0px 0px 25px 0px rgba(-1, -1, 0, 0.75) inset;
-}
-
-.navbar-toggler-icon {
-  background-image: url(images/svg-logo/menu-outline.svg) !important;
 }
 
 .hire-me {
@@ -112,10 +90,6 @@ body::-webkit-scrollbar-thumb {
   animation-direction: alternate !important;
 }
 
-.footer-brand-logo {
-  width: 250px !important;
-}
-
 /* Logo Animation */
 #logo-image {
   width: 100px !important;
@@ -140,4 +114,22 @@ body::-webkit-scrollbar-thumb {
 /* Custom list bullets */
 .custom-1 li {
   list-style-type: "> 😊 ";
+}
+
+footer {
+  background-color: #55535e;
+}
+
+/* Large Screen */
+@media screen and (min-width: 960px) {
+  .embed-responsive {
+    height: 428px !important;
+  }
+}
+
+/* Small screen */
+@media screen and (min-width: 200px) and (max-width: 769px) {
+  h1 {
+    font-size: 28px !important;
+  }
 }

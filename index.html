@@ -40,7 +40,7 @@
   <body id="body">
     <header class="container-fluid">
       <nav
-        class="navbar navbar-expand-lg navbar-secondary fixed-top bg-dark px-5"
+        class="navbar navbar-expand-lg navbar-secondary bg-dark px-5 fixed-top"
       >
         <a class="navbar-brand" href="#about-me"
           ><img
@@ -84,34 +84,35 @@
     </header>
     <main>
       <!-- Home -->
-      <section class="container-fluid" id="home">
-        <div class="container d-lg-flex min-vh-90 text-light pt-5 mx-auto">
-          <div class="row align-items-center justify-content-center">
-            <div
-              class="col-lg-6 col-md-12 pt-lg-0 pt-5 text-lg-left text-md-center order-lg-1 order-2"
-            >
-              <h1>
-                Hi I am
-                <span class="name d-md-inline d-block">Jayson A. Roda</span> 🤗
-              </h1>
-              <h6>
-                I am a Full Stack Web🌏 Developer based in the Philippines.💻
-              </h6>
-              <p class="pt-5">
-                I graduated with a course of Bachelor of Science in Computer
-                Science last September 2021 in the Visayas State University.
-                <a class="rounded-lg py-1 ml-2 hire-me mt-3" href="#about-me">
-                  Learn more about me &rarr;
-                </a>
-              </p>
-            </div>
-            <div class="col-lg-6 col-md-12 order-lg-2 order-1 h-75 py-5">
-              <img
-                src="images/Profile.png"
-                alt="Jayson Roda"
-                class="col-lg-6 col-md-4 mx-auto d-md-flex p-0 rounded-circle shadow-lg"
-              />
-            </div>
+      <section
+        class="container-fluid d-flex text-light align-items-center justify-content-center"
+        id="home"
+      >
+        <div class="container row text-light mx-auto mt-lg-0">
+          <div
+            class="col-lg-6 col-12 mt-5 text-lg-left text-md-center order-lg-1 order-2"
+          >
+            <h1>
+              Hi I am
+              <span class="name d-md-inline d-block">Jayson A. Roda</span> 🤗
+            </h1>
+            <h6>
+              I am a Full Stack Web🌏 Developer based in the Philippines.💻
+            </h6>
+            <p class="pt-5">
+              I graduated with a course of Bachelor of Science in Computer
+              Science last September 2021 in the Visayas State University.
+              <a class="rounded-lg py-1 ml-2 hire-me mt-3" href="#about-me">
+                Learn more about me &rarr;
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-6 col-12 order-lg-2 order-1">
+            <img
+              src="images/Profile.png"
+              alt="Jayson Roda"
+              class="col-lg-6 col-md-4 col-6 mx-auto d-md-flex p-0 rounded-circle shadow-lg"
+            />
           </div>
         </div>
       </section>
@@ -119,22 +120,20 @@
       <!-- About Me -->
       <div class="bg-white">
         <section
-          class="container min-vh-100 text-secondary py-5 mx-auto"
+          class="container min-vh-75 text-secondary py-5 mx-auto"
           id="about-me"
         >
           <h2 class="text-dark text-center d-block pb-4">About Me</h2>
-          <div class="row align-items-center justify-content-center">
-            <div
-              class="col-lg-5 col-md-12 pt-lg-0 text-lg-left text-md-center mr-auto"
-            >
-              <h5 class="text-dark">Objectives</h5>
+          <div class="row justify-content-between">
+            <div class="col-lg-5 col-md-12 pt-lg-0 text-lg-left text-md-center">
+              <h5 class="text-dark">Career Objectives</h5>
               <p class="mt-2">
                 Seeking an entry-level position as a Full Stack Web🌏 Developer
                 in a reputed company where I can learn new skills, expand my
                 knowledge, and leverage my learnings.
               </p>
 
-              <h5 class="mt-5 text-dark">Academics and skills</h5>
+              <h5 class="mt-4 text-dark">Academics and skills</h5>
               <p class="mt-2">
                 I graduated with a course of Bachelor of Science in Computer
                 Science last September 2021 in the Visayas State University. I
@@ -144,20 +143,20 @@
                 system. Now i am using the MERN tech stack.
               </p>
 
-              <h5 class="mt-5 text-dark">Work Experience</h5>
-              <ul class="ml-5 d-flex flex-column mt-2 custom-1">
+              <h5 class="mt-4 text-dark">Work Experience</h5>
+              <ul class="mt-2 custom-1">
                 <li>I.T Staff || OHA || Visayas State University</li>
                 <li>Web Developer || CET || Visayas State University</li>
               </ul>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <h4 class="text-dark text-center">Tools</h4>
-              <div class="bg-dark p-3 rounded mt-2">
-                <div class="row d-flex justify-content-around">
+            <div class="col-lg-6 col-md-12 mt-md-5 mt-lg-0">
+              <h5 class="text-dark text-center">Tools</h5>
+              <div class="bg-dark rounded mt-2 p-3">
+                <div class="row justify-content-around">
                   <!-- First collapse -->
                   <p>
                     <button
-                      class="btn btn-light py-1 px-2 front-end-tools-btn"
+                      class="btn btn-light py-1 px-2 front-end-tools-btn col"
                       type="button"
                       data-toggle="collapse"
                       data-target="#front-end-tools"
@@ -197,13 +196,13 @@
                   </p>
                   <!-- End of third collapse -->
                 </div>
-                <div class="row d-block">
+                <div class="row m-0 d-block">
                   <!-- First collapse -->
                   <div
-                    class="collapse show mt-3 tools-collapse"
+                    class="collapse show tools-collapse"
                     id="front-end-tools"
                   >
-                    <div class="card card-body p-4 custom-shadow">
+                    <div class="card card-body p-2 custom-shadow">
                       <div class="row justify-content-around">
                         <img src="images/tools-logo/logo-html5.png" alt="" />
                         <img src="images/tools-logo/logo-css3.png" alt="" />
@@ -222,7 +221,7 @@
                   </div>
                   <!-- End of first collapse -->
                   <!-- Second collapse -->
-                  <div class="collapse mt-3 tools-collapse" id="mern-stack">
+                  <div class="collapse tools-collapse" id="mern-stack">
                     <div class="card card-body p-2 custom-shadow">
                       <div class="row justify-content-around">
                         <img src="images/tools-logo/logo-mongodb.png" alt="" />
@@ -239,7 +238,7 @@
                   </div>
                   <!-- End of second collapse -->
                   <!-- Third collapse -->
-                  <div class="collapse mt-3 tools-collapse" id="other-tools">
+                  <div class="collapse tools-collapse" id="other-tools">
                     <div class="card card-body p-2 custom-shadow">
                       <div class="row justify-content-around">
                         <img src="images/tools-logo/logo-git.png" alt="" />
@@ -259,9 +258,9 @@
               </div>
             </div>
           </div>
-          <div class="text-center">
+          <div class="text-center mt-5">
             <button
-              class="rounded-lg py-1 px-4 hire-me mt-5 col-md-3"
+              class="rounded-lg py-1 px-4 hire-me col-md-3"
               data-toggle="modal"
               data-target="#hireMeModal"
             >
@@ -319,150 +318,151 @@
       >
         <h2 class="text-dark">Projects</h2>
         <div
-          class="d-flex flex-lg-row flex-column justify-content-md-around align-items-center py-5"
+          class="row flex-lg-row flex-column justify-content-md-around mt-3 m-0"
         >
           <!-- First Card -->
-          <div
-            class="card bg-dark col-lg-3 col-10 shadow-lg p-lg-3 py-md-3 px-md-5 p-3 text-light h-75"
-          >
-            <img
-              src="images/project-1.png"
-              class="card-img-top rounded-lg"
-              alt="Pig Game Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title mt-2 text-white">Pig (dice game)</h5>
-              <p class="card-text mt-2 text-left">
-                Pig is a simple dice game first described in print in John
-                Scarne in 1945. Players take turns to roll a single die as many
-                times as they wish, adding all roll results to a running total,
-                but losing their gained score for the turn if they roll a 1.
-              </p>
-              <div class="bg-light rounded-lg text-dark custom-shadow">
-                <p class="mt-3">
-                  <strong>Tech Stack Used</strong>
+          <div class="col-lg-4 col-10 mx-auto">
+            <div class="card bg-dark shadow-lg px-lg-3 pt-lg-3 text-light">
+              <img
+                src="images/project-1.png"
+                class="card-img-top rounded-lg"
+                alt="Pig Game Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-white">Pig (dice game)</h5>
+                <p class="card-text text-left">
+                  Pig is a simple dice game first described in print in John
+                  Scarne in 1945. Players take turns to roll a single die as
+                  many times as they wish, adding all roll results to a running
+                  total if they press the hold button, but losing their gained
+                  score for the turn if they roll a 1.
                 </p>
-                <div class="row justify-content-around">
-                  <img
-                    src="images/tools-logo/logo-html5.png"
-                    alt="HTML LOGO"
-                    class="col-3"
-                  />
-                  <img
-                    src="images/tools-logo/logo-css3.png"
-                    alt="CSS3 LOGO"
-                    class="col-3"
-                  />
-                  <img
-                    src="images/tools-logo/logo-javascript.png"
-                    alt="JAVASCRIPT LOGO"
-                    class="col-3"
-                  />
+                <div class="bg-light rounded-lg text-dark custom-shadow">
+                  <p class="mt-3">
+                    <strong>Tech Stack Used</strong>
+                  </p>
+                  <div class="row justify-content-around">
+                    <img
+                      src="images/tools-logo/logo-html5.png"
+                      alt="HTML LOGO"
+                      class="col-3"
+                    />
+                    <img
+                      src="images/tools-logo/logo-css3.png"
+                      alt="CSS3 LOGO"
+                      class="col-3"
+                    />
+                    <img
+                      src="images/tools-logo/logo-javascript.png"
+                      alt="JAVASCRIPT LOGO"
+                      class="col-3"
+                    />
+                  </div>
                 </div>
+                <a
+                  href="https://codepen.io/J-Roda/full/NWzgVew"
+                  target="_blank"
+                  class="btn btn-light mt-3 px-3 py-1"
+                  >Go to project</a
+                >
               </div>
-              <a
-                href="https://codepen.io/J-Roda/full/NWzgVew"
-                target="_blank"
-                class="btn btn-light mt-3 px-3 py-1"
-                >Go to project</a
-              >
             </div>
           </div>
           <!-- End First Card -->
           <!-- Second Card -->
-          <div
-            class="card bg-dark col-lg-3 col-10 shadow-lg p-lg-3 py-md-3 px-md-5 p-3 text-light h-75"
-          >
-            <img
-              src="images/project-2.png"
-              class="card-img-top rounded-lg"
-              alt="Pig Game Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Guess My Number</h5>
-              <p class="card-text text-left mt-2">
-                Guess The Number is a game where you must use your logic in
-                order to guess a 0-20 secret number selected by the computer at
-                the beginning of the game. The number is formed with digits from
-                0 to 9; each digit appears once at most. This number is guessed
-                by you via 20 attempts.
-              </p>
-              <div class="bg-light rounded-lg text-dark custom-shadow">
-                <p class="mt-3">
-                  <strong>Tech Stack Used</strong>
+          <div class="col-lg-4 col-10 mt-lg-0 mt-5 mx-auto">
+            <div class="card bg-dark shadow-lg px-lg-3 pt-lg-3 text-light">
+              <img
+                src="images/project-2.png"
+                class="card-img-top rounded-lg"
+                alt="Pig Game Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-white">Guess My Number</h5>
+                <p class="card-text text-left">
+                  Guess My Number is a game where you must use your logic in
+                  order to guess a 0-20 secret number selected by the computer
+                  at the beginning of the game. You input a number and check if
+                  it is right. This number is guessed by you via 20 attempts.
                 </p>
-                <div class="row justify-content-around">
-                  <img
-                    src="images/tools-logo/logo-html5.png"
-                    alt="HTML LOGO"
-                    class="col-3"
-                  />
-                  <img
-                    src="images/tools-logo/logo-css3.png"
-                    alt="CSS3 LOGO"
-                    class="col-3"
-                  />
-                  <img
-                    src="images/tools-logo/logo-javascript.png"
-                    alt="JAVASCRIPT LOGO"
-                    class="col-3"
-                  />
+                <div class="bg-light rounded-lg text-dark custom-shadow">
+                  <p class="mt-3">
+                    <strong>Tech Stack Used</strong>
+                  </p>
+                  <div class="row justify-content-around">
+                    <img
+                      src="images/tools-logo/logo-html5.png"
+                      alt="HTML LOGO"
+                      class="col-3"
+                    />
+                    <img
+                      src="images/tools-logo/logo-css3.png"
+                      alt="CSS3 LOGO"
+                      class="col-3"
+                    />
+                    <img
+                      src="images/tools-logo/logo-javascript.png"
+                      alt="JAVASCRIPT LOGO"
+                      class="col-3"
+                    />
+                  </div>
                 </div>
+                <a
+                  href="https://codepen.io/J-Roda/full/BaVZgWr"
+                  target="_blank"
+                  class="btn btn-light mt-3 px-3 py-1"
+                  >Go to project</a
+                >
               </div>
-              <a
-                href="https://codepen.io/J-Roda/full/BaVZgWr"
-                target="_blank"
-                class="btn btn-light mt-3 px-3 py-1"
-                >Go to project</a
-              >
             </div>
           </div>
           <!-- End Second Card -->
           <!-- Third Card -->
-          <div
-            class="card bg-dark col-lg-3 col-10 shadow-lg p-lg-3 py-md-3 px-md-5 p-3 text-light"
-          >
-            <img
-              src="images/project-1.png"
-              class="card-img-top rounded-lg"
-              alt="Pig Game Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title mt-2 text-white">Pig (dice game)</h5>
-              <p class="card-text mt-2 text-left">
-                Pig is a simple dice game first described in print in John
-                Scarne in 1945. Players take turns to roll a single die as many
-                times as they wish, adding all roll results to a running total,
-                but losing their gained score for the turn if they roll a 1.
-              </p>
-              <div class="bg-light rounded-lg text-dark custom-shadow">
-                <p class="mt-3">
-                  <strong>Tech Stack Used</strong>
+          <div class="col-lg-4 col-10 mt-lg-0 mt-5 mx-auto">
+            <div class="card bg-dark shadow-lg px-lg-3 pt-lg-3 text-light">
+              <img
+                src="images/project-1.png"
+                class="card-img-top rounded-lg"
+                alt="Pig Game Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-white">Pig (dice game)</h5>
+                <p class="card-text text-left">
+                  Pig is a simple dice game first described in print in John
+                  Scarne in 1945. Players take turns to roll a single die as
+                  many times as they wish, adding all roll results to a running
+                  total if they press the hold button, but losing their gained
+                  score for the turn if they roll a 1.
                 </p>
-                <div class="row justify-content-around">
-                  <img
-                    src="images/tools-logo/logo-html5.png"
-                    alt="HTML LOGO"
-                    class="col-3"
-                  />
-                  <img
-                    src="images/tools-logo/logo-css3.png"
-                    alt="CSS3 LOGO"
-                    class="col-3"
-                  />
-                  <img
-                    src="images/tools-logo/logo-javascript.png"
-                    alt="JAVASCRIPT LOGO"
-                    class="col-3"
-                  />
+                <div class="bg-light rounded-lg text-dark custom-shadow">
+                  <p class="mt-3">
+                    <strong>Tech Stack Used</strong>
+                  </p>
+                  <div class="row justify-content-around">
+                    <img
+                      src="images/tools-logo/logo-html5.png"
+                      alt="HTML LOGO"
+                      class="col-3"
+                    />
+                    <img
+                      src="images/tools-logo/logo-css3.png"
+                      alt="CSS3 LOGO"
+                      class="col-3"
+                    />
+                    <img
+                      src="images/tools-logo/logo-javascript.png"
+                      alt="JAVASCRIPT LOGO"
+                      class="col-3"
+                    />
+                  </div>
                 </div>
+                <a
+                  href="https://codepen.io/J-Roda/full/NWzgVew"
+                  target="_blank"
+                  class="btn btn-light mt-3 px-3 py-1"
+                  >Go to project</a
+                >
               </div>
-              <a
-                href="https://codepen.io/J-Roda/full/NWzgVew"
-                target="_blank"
-                class="btn btn-light mt-3 px-3 py-1"
-                >Go to project</a
-              >
             </div>
           </div>
           <!-- End Third Card -->
@@ -508,12 +508,10 @@
         </div>
 
         <!-- Contact Me Message -->
-        <div class="row d-flex py-5 justify-content-around">
+        <div class="row m-0 d-flex py-5 justify-content-around">
           <div class="col-lg-5 col-10">
             <h3>Visit Me</h3>
-            <div
-              class="embed-responsive embed-responsive-16by9 rounded-lg maps-div"
-            >
+            <div class="embed-responsive embed-responsive-16by9 rounded-lg">
               <iframe
                 class="embed-responsive-item"
                 src="https://maps.google.com/maps?q=10.676531577140254,%20124.8011&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -523,7 +521,7 @@
           </div>
           <div class="col-lg-5 col-md-10 pt-5 pt-lg-0">
             <h3>Send a Message</h3>
-            <div class="bg-dark p-3 rounded-lg">
+            <div class="bg-dark p-3 rounded-lg text-light">
               <div class="form-group">
                 <label for="fullName">Name</label>
                 <input
@@ -545,23 +543,13 @@
                 />
               </div>
               <div class="form-group">
-                <label for="contactNumber">Contact Number</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="contactNumber"
-                  aria-describedby="contactNumberHelp"
-                  placeholder="+63 900 000 0000"
-                />
-              </div>
-              <div class="form-group">
                 <label for="contactNumber">Message</label>
                 <textarea
                   class="form-control"
                   name=""
                   id=""
                   cols="30"
-                  rows="10"
+                  rows="5"
                 ></textarea>
               </div>
 
@@ -615,17 +603,18 @@
                   </div>
                 </div>
               </div>
+              <!-- End of Modal -->
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="pt-3 bg-dark fixed">
-      <div class="text-white text-center pb-2">
+    <footer class="bg-dark fixed p-1">
+      <div class="text-white text-center">
         <small>
           Copyright &copy; 2022 Jayson A. Roda | Powered by HTML, CSS &
-          Bootstrap
+          JavasScript
         </small>
       </div>
     </footer>
