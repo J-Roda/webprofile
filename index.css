@@ -102,16 +102,9 @@ body::-webkit-scrollbar-thumb {
   height: 50px;
   fill: var(--light);
 
-  animation: slide-down 3s infinite;
+  animation: slide-down 2s infinite;
   transform: translateY(20px);
   animation-direction: alternate;
-}
-
-.hover-down:hover,
-.hover-down:focus {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  transition: 1s ease;
-  transform: translateY(1em);
 }
 
 .hire-me {
