@@ -108,6 +108,19 @@ body::-webkit-scrollbar-thumb {
   animation-direction: alternate;
 }
 
+.home-emoji {
+  animation: skew 2s infinite;
+  animation-direction: alternate;
+}
+@keyframes skew {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
 .hire-me {
   transition: 0.25s;
 }
