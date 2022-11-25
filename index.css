@@ -209,7 +209,6 @@ body::-webkit-scrollbar-thumb {
   }
 
   .active {
-    background-color: transparent;
   }
 }
 
@@ -240,7 +239,6 @@ body::-webkit-scrollbar-thumb {
   }
 
   .active {
-    background-color: transparent;
   }
 }
 
