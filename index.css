@@ -101,6 +101,10 @@ body::-webkit-scrollbar-thumb {
   width: 50px;
   height: 50px;
   fill: var(--light);
+
+  animation: slide-down 3s infinite;
+  transform: translateY(20px);
+  animation-direction: alternate;
 }
 
 .hover-down:hover,
@@ -210,6 +214,10 @@ body::-webkit-scrollbar-thumb {
   .custom-1 li {
     list-style-type: none;
   }
+
+  .active {
+    background-color: transparent;
+  }
 }
 
 /* Small and extra-small screen */
@@ -237,6 +245,10 @@ body::-webkit-scrollbar-thumb {
     height: 25px;
     fill: var(--light);
   }
+
+  .active {
+    background-color: transparent;
+  }
 }
 
 @keyframes color-rotate {
@@ -248,10 +260,11 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.glassmorpishm {
-  background: linear-gradient(rgba(34, 34, 34, 0.85), rgba(34, 34, 34, 0.85));
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(14.4px);
-  -webkit-backdrop-filter: blur(14.4px);
+@keyframes slide-down {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20deg);
+  }
 }
