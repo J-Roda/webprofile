@@ -81,13 +81,14 @@ body::-webkit-scrollbar-thumb {
   color: var(--light) !important;
 }
 
-.active {
+.active-link {
   border-radius: 10px;
   background-color: rgba(108, 117, 125, 0.5);
 }
 
 .navbar-toggler-icon {
   background-image: url(images/svg-logo/menu-outline.svg) !important;
+  fill: white;
 }
 
 .custom-shadow {
@@ -108,11 +109,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hire-me {
-  transition: 0.3s;
+  transition: 0.25s;
 }
 
-.hire-me:hover {
+.hire-me:hover,
+.hire-me:focus {
   background-color: #a8a8a8;
+  transform: translateY(-0.25em);
 }
 .contact-me-icons {
   width: 50px;
@@ -208,12 +211,13 @@ body::-webkit-scrollbar-thumb {
     list-style-type: none;
   }
 
-  .active {
+  .active-link {
+    background-color: transparent;
   }
 }
 
 /* Small and extra-small screen */
-@media (200px <= width <= 575px) {
+@media (width <= 575px) {
   h1 {
     font-size: 40px !important;
   }
@@ -238,7 +242,8 @@ body::-webkit-scrollbar-thumb {
     fill: var(--light);
   }
 
-  .active {
+  .active-link {
+    background-color: transparent;
   }
 }
 

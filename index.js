@@ -13,17 +13,17 @@ const hiddenElementsRight = document.querySelectorAll(".hidden-r");
 function activeMenu() {
   let len = section.length;
   while (--len && window.scrollY + 120 < section[len].offsetTop) {}
-  navItem.forEach((ltx) => ltx.classList.remove("active"));
-  navItem[len].classList.add("active");
+  navItem.forEach((ltx) => ltx.classList.remove("active-link"));
+  navItem[len].classList.add("active-link");
   navbarDarkBG();
 }
 
 // A function that makes navbar background dark
 function navbarDarkBG() {
   if (
-    navItem[1].classList.contains("active") ||
-    navItem[2].classList.contains("active") ||
-    navItem[3].classList.contains("active")
+    navItem[1].classList.contains("active-link") ||
+    navItem[2].classList.contains("active-link") ||
+    navItem[3].classList.contains("active-link")
   ) {
     navbar.classList.add("bg-dark");
     navbar.classList.remove("bg-transparent");
