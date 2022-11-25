@@ -40,11 +40,11 @@
   <body id="body">
     <header class="container-fluid">
       <nav
-        class="navbar navbar-expand-lg navbar-secondary bg-dark px-5 fixed-top"
+        class="navbar navbar-expand-lg navbar-secondary bg-transparent px-5 fixed-top"
       >
-        <a class="navbar-brand" href="#about-me"
+        <a class="navbar-brand hidden-l" href="#about-me"
           ><img
-            src="images/logo-w-name-white.png"
+            src="images/update-color.png"
             id="logo-image"
             alt="roda logo"
             class="rounded"
@@ -62,20 +62,20 @@
         </button>
 
         <div
-          class="collapse navbar-collapse text-lg-left text-center"
+          class="collapse navbar-collapse text-lg-left text-center hidden-r"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav ml-auto justify-content-around">
-            <li class="nav-item mx-2">
+            <li class="nav-item mx-3">
               <a class="nav-link" href="#home"><span>Home</span></a>
             </li>
-            <li class="nav-item mx-2">
+            <li class="nav-item mx-3">
               <a class="nav-link" href="#about-me"><span>About Me</span></a>
             </li>
-            <li class="nav-item mx-2">
+            <li class="nav-item mx-3">
               <a class="nav-link" href="#projects"><span>Projects</span></a>
             </li>
-            <li class="nav-item mx-2">
+            <li class="nav-item mx-3">
               <a class="nav-link" href="#contact-me"><span>Contact Me</span></a>
             </li>
           </ul>
@@ -85,243 +85,194 @@
     <main>
       <!-- Home -->
       <section
-        class="container-fluid d-flex text-light align-items-center justify-content-center"
+        class="container-fluid d-flex text-light align-items-center justify-content-center parallax"
         id="home"
       >
-        <div class="container row text-light mx-auto mt-lg-0">
-          <div
-            class="col-lg-6 col-12 mt-5 text-lg-left text-md-center order-lg-1 order-2"
-          >
-            <h1>
+        <div class="row text-light hidden-l">
+          <div class="col-12 text-center">
+            <h1 class="display-2">
               Hi I am
-              <span class="name d-md-inline d-block">Jayson A. Roda</span> 🤗
+              <span class="name d-md-inline d-block"> Jayson</span> 🤗
             </h1>
-            <h6>
+            <h5 class="sub-heading">
               I am a Full Stack Web🌏 Developer based in the Philippines.💻
-            </h6>
-            <p class="pt-5">
-              I graduated with a course of Bachelor of Science in Computer
-              Science last September 2021 in the Visayas State University.
-              <a class="rounded-lg py-1 ml-2 hire-me mt-3" href="#about-me">
-                Learn more about me &rarr;
+            </h5>
+            <p class="mt-5 d-flex flex-column">
+              <a class="rounded-lg text-light" href="#about-me">
+                Learn more about me
+              </a>
+              <a href="#about-me">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="learn-more-svg hover-down"
+                >
+                  <path
+                    d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z"
+                  />
+                </svg>
               </a>
             </p>
           </div>
-          <div class="col-lg-6 col-12 order-lg-2 order-1">
+          <!-- <div class="col-lg-6 col-12 order-lg-2 order-1">
             <img
               src="images/Profile.png"
               alt="Jayson Roda"
               class="col-lg-6 col-md-4 col-6 mx-auto d-md-flex p-0 rounded-circle shadow-lg"
             />
-          </div>
+          </div> -->
         </div>
       </section>
 
       <!-- About Me -->
-      <div class="bg-white">
-        <section
-          class="container min-vh-75 text-secondary py-5 mx-auto"
-          id="about-me"
-        >
-          <h2 class="text-dark text-center d-block pb-4">About Me</h2>
-          <div class="row justify-content-between">
-            <div class="col-lg-5 col-md-12 pt-lg-0 text-lg-left text-md-center">
-              <h5 class="text-dark">Career Objectives</h5>
-              <p class="mt-2">
-                Seeking an entry-level position as a Full Stack Web🌏 Developer
-                in a reputed company where I can learn new skills, expand my
-                knowledge, and leverage my learnings.
-              </p>
-
-              <h5 class="mt-4 text-dark">Academics and skills</h5>
-              <p class="mt-2">
-                I graduated with a course of Bachelor of Science in Computer
-                Science last September 2021 in the Visayas State University. I
-                currently enrolled in Zuitt Bootcamp PH, I have basic skills in
-                programming languages like Java, C#, C++, JavasScript and PHP. I
-                also have knowledge in MySQL database and GIT version control
-                system. Now i am using the MERN tech stack.
-              </p>
-
-              <h5 class="mt-4 text-dark">Work Experience</h5>
-              <ul class="mt-2 custom-1">
-                <li>I.T Staff || OHA || Visayas State University</li>
-                <li>Web Developer || CET || Visayas State University</li>
-              </ul>
-            </div>
-            <div class="col-lg-6 col-md-12 mt-md-5 mt-lg-0">
-              <h5 class="text-dark text-center">Tools</h5>
-              <div class="bg-dark rounded mt-2 p-3">
-                <div class="row justify-content-around">
-                  <!-- First collapse -->
-                  <p>
-                    <button
-                      class="btn btn-light py-1 px-2 front-end-tools-btn col"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#front-end-tools"
-                      aria-expanded="false"
-                      aria-controls="front-end-tools"
-                    >
-                      Front-End Tools
-                    </button>
-                  </p>
-                  <!-- End of first collapse -->
-                  <!-- Second collapse -->
-                  <p>
-                    <button
-                      class="btn btn-light py-1 px-2 mern-stack-btn"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#mern-stack"
-                      aria-expanded="false"
-                      aria-controls="mern-stack"
-                    >
-                      MERN Stack
-                    </button>
-                  </p>
-                  <!-- End of second collapse -->
-                  <!-- Third collapse -->
-                  <p>
-                    <button
-                      class="btn btn-light py-1 px-2 other-tools-btn"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#other-tools"
-                      aria-expanded="false"
-                      aria-controls="other-tools"
-                    >
-                      Other Tools
-                    </button>
-                  </p>
-                  <!-- End of third collapse -->
-                </div>
-                <div class="row m-0 d-block">
-                  <!-- First collapse -->
-                  <div
-                    class="collapse show tools-collapse"
-                    id="front-end-tools"
-                  >
-                    <div class="card card-body p-2 custom-shadow">
-                      <div class="row justify-content-around">
-                        <img src="images/tools-logo/logo-html5.png" alt="" />
-                        <img src="images/tools-logo/logo-css3.png" alt="" />
-                      </div>
-                      <div class="row justify-content-around">
-                        <img
-                          src="images/tools-logo/logo-javascript.png"
-                          alt=""
-                        />
-                        <img
-                          src="images/tools-logo/logo-bootstrap.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of first collapse -->
-                  <!-- Second collapse -->
-                  <div class="collapse tools-collapse" id="mern-stack">
-                    <div class="card card-body p-2 custom-shadow">
-                      <div class="row justify-content-around">
-                        <img src="images/tools-logo/logo-mongodb.png" alt="" />
-                        <img
-                          src="images/tools-logo/logo-expressjs.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="row justify-content-around">
-                        <img src="images/tools-logo/logo-react.png" alt="" />
-                        <img src="images/tools-logo/logo-nodejs.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of second collapse -->
-                  <!-- Third collapse -->
-                  <div class="collapse tools-collapse" id="other-tools">
-                    <div class="card card-body p-2 custom-shadow">
-                      <div class="row justify-content-around">
-                        <img src="images/tools-logo/logo-git.png" alt="" />
-                        <img
-                          src="images/tools-logo/logo-gitlab-ci-cd.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="row justify-content-around">
-                        <img src="images/tools-logo/logo-postman.png" alt="" />
-                        <img src="images/tools-logo/logo-heroku.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of third collapse -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="text-center mt-5">
-            <button
-              class="rounded-lg py-1 px-4 hire-me col-md-3"
-              data-toggle="modal"
-              data-target="#hireMeModal"
-            >
-              Hire Me!
-            </button>
-          </div>
-          <!-- Modal -->
+      <section
+        class="container bg-white min-vh-100 text-secondary py-5 mx-auto overflow-hidden"
+        id="about-me"
+      >
+        <h2 class="text-dark text-center d-block pb-4">About Me</h2>
+        <div class="row justify-content-between">
           <div
-            class="modal fade"
-            id="hireMeModal"
-            tabindex="-1"
-            aria-labelledby="hireMeModal"
-            aria-hidden="true"
+            class="col-lg-5 col-md-12 pt-lg-0 text-lg-left text-md-center hidden-l"
           >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="hireMeModal">
-                    UNDERMAINTENANCE!
-                  </h5>
+            <h5 class="text-dark">Career Objectives</h5>
+            <p class="mt-2">
+              Seeking an entry-level position as a Full Stack Web🌏 Developer in
+              a reputed company where I can learn new skills, expand my
+              knowledge, and leverage my learnings.
+            </p>
+
+            <h5 class="mt-lg-4 mt-5 text-dark">Academics and skills</h5>
+            <p class="mt-2">
+              I graduated with a course of Bachelor of Science in Computer
+              Science last September 2021 in the Visayas State University. I
+              currently enrolled in Zuitt Bootcamp PH, I have basic skills in
+              programming languages like Java, C#, C++, JavasScript and PHP. I
+              also have knowledge in MySQL database and GIT version control
+              system. Now i am using the MERN tech stack.
+            </p>
+
+            <h5 class="mt-lg-4 mt-5 text-dark">Work Experience</h5>
+            <ul class="mt-2 custom-1">
+              <li>I.T Staff || OHA || Visayas State University</li>
+              <li>Web Developer || CET || Visayas State University</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 mt-md-5 mt-lg-0 hidden-r">
+            <h5 class="text-dark text-center">Tools</h5>
+            <div class="bg-dark rounded mt-2 p-3">
+              <div class="row justify-content-around">
+                <!-- First collapse -->
+                <p>
                   <button
+                    class="btn btn-light py-1 px-2 front-end-tools-btn col"
                     type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
+                    data-toggle="collapse"
+                    data-target="#front-end-tools"
+                    aria-expanded="false"
+                    aria-controls="front-end-tools"
                   >
-                    <span aria-hidden="true">&times;</span>
+                    Front-End Tools
                   </button>
-                </div>
-                <div class="modal-body">
-                  <p>Thank you for hiring me!</p>
-                </div>
-                <div class="modal-footer">
+                </p>
+                <!-- End of first collapse -->
+                <!-- Second collapse -->
+                <p>
                   <button
+                    class="btn btn-light py-1 px-2 mern-stack-btn"
                     type="button"
-                    class="btn btn-secondary"
-                    data-dismiss="modal"
+                    data-toggle="collapse"
+                    data-target="#mern-stack"
+                    aria-expanded="false"
+                    aria-controls="mern-stack"
                   >
-                    Close
+                    MERN Stack
                   </button>
-                  <button type="button" class="btn btn-primary">
-                    Save changes
+                </p>
+                <!-- End of second collapse -->
+                <!-- Third collapse -->
+                <p>
+                  <button
+                    class="btn btn-light py-1 px-2 other-tools-btn"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#other-tools"
+                    aria-expanded="false"
+                    aria-controls="other-tools"
+                  >
+                    Other Tools
                   </button>
+                </p>
+                <!-- End of third collapse -->
+              </div>
+              <div class="row m-0 d-block">
+                <!-- First collapse -->
+                <div class="collapse show tools-collapse" id="front-end-tools">
+                  <div class="card card-body p-2 custom-shadow">
+                    <div class="row justify-content-around">
+                      <img src="images/tools-logo/logo-html5.png" alt="" />
+                      <img src="images/tools-logo/logo-css3.png" alt="" />
+                    </div>
+                    <div class="row justify-content-around">
+                      <img src="images/tools-logo/logo-javascript.png" alt="" />
+                      <img src="images/tools-logo/logo-bootstrap.png" alt="" />
+                    </div>
+                  </div>
                 </div>
+                <!-- End of first collapse -->
+                <!-- Second collapse -->
+                <div class="collapse tools-collapse" id="mern-stack">
+                  <div class="card card-body p-2 custom-shadow">
+                    <div class="row justify-content-around">
+                      <img src="images/tools-logo/logo-mongodb.png" alt="" />
+                      <img src="images/tools-logo/logo-expressjs.png" alt="" />
+                    </div>
+                    <div class="row justify-content-around">
+                      <img src="images/tools-logo/logo-react.png" alt="" />
+                      <img src="images/tools-logo/logo-nodejs.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!-- End of second collapse -->
+                <!-- Third collapse -->
+                <div class="collapse tools-collapse" id="other-tools">
+                  <div class="card card-body p-2 custom-shadow">
+                    <div class="row justify-content-around">
+                      <img src="images/tools-logo/logo-git.png" alt="" />
+                      <img
+                        src="images/tools-logo/logo-gitlab-ci-cd.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="row justify-content-around">
+                      <img src="images/tools-logo/logo-postman.png" alt="" />
+                      <img src="images/tools-logo/logo-heroku.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!-- End of third collapse -->
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+        <div class="text-center mt-5">
+          <a
+            class="rounded-lg py-1 px-4 hire-me col-md-3 btn btn-light border-dark shadow"
+            href="https://calendly.com/jayson-roda96/know-me-more"
+          >
+            Hire Me!
+          </a>
+        </div>
+      </section>
 
       <!-- Projects -->
       <section
-        class="container-fluid pt-5 min-vh-100 text-center bg-light"
+        class="container-fluid pt-5 min-vh-100 text-center bg-light overflow-hidden"
         id="projects"
       >
         <h2 class="text-dark">Projects</h2>
-        <div
-          class="row flex-lg-row flex-column justify-content-md-around mt-3 m-0"
-        >
+        <div class="row flex-lg-row flex-column mt-3 m-0 p-3">
           <!-- First Card -->
-          <div class="col-lg-4 col-10 mx-auto">
+          <div class="col-lg-4 col-md-10 col-12 mx-auto hidden-l projects">
             <div class="card bg-dark shadow-lg px-lg-3 pt-lg-3 text-light">
               <img
                 src="images/project-1.png"
@@ -370,7 +321,9 @@
           </div>
           <!-- End First Card -->
           <!-- Second Card -->
-          <div class="col-lg-4 col-10 mt-lg-0 mt-5 mx-auto">
+          <div
+            class="col-lg-4 col-md-10 col-12 mt-lg-0 mt-5 mx-auto hidden-l projects"
+          >
             <div class="card bg-dark shadow-lg px-lg-3 pt-lg-3 text-light">
               <img
                 src="images/project-2.png"
@@ -418,7 +371,7 @@
           </div>
           <!-- End Second Card -->
           <!-- Third Card -->
-          <div class="col-lg-4 col-10 mt-lg-0 mt-5 mx-auto">
+          <div class="col-lg-4 col-md-10 col-12 mt-5 mx-auto hidden-l projects">
             <div class="card bg-dark shadow-lg px-lg-3 pt-lg-3 text-light">
               <img
                 src="images/project-1.png"
@@ -470,46 +423,93 @@
       </section>
 
       <!-- Contact Me -->
-      <section class="pt-5 min-vh-100 text-center" id="contact-me">
+      <section
+        class="pt-5 min-vh-100 text-center overflow-hidden"
+        id="contact-me"
+      >
         <h2>Contact Me</h2>
         <!-- Contact Me Icons -->
-        <div class="row justify-content-center mt-5 d-inline-block rounded-lg">
-          <a href="https://web.facebook.com/Mikimimi73/" target="_blank">
-            <img
-              src="images/svg-logo/facebook-svgrepo-com (1).svg"
-              alt="facebook logo"
-              class="col-2 col-md-1 contact-me-icons p-3 mx-2 rounded-lg"
-            />
+        <div class="row justify-content-center mt-5 mx-0">
+          <a
+            href="https://web.facebook.com/Mikimimi73/"
+            target="_blank"
+            class="hidden-l logo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="contact-me-icons mx-2 rounded-lg"
+            >
+              <path
+                d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+              />
+            </svg>
           </a>
           <a
             href="https://www.linkedin.com/in/jayson-roda-0aa777233/"
             target="_blank"
+            class="hidden-l logo"
           >
-            <img
-              src="images/svg-logo/linkedin-svgrepo-com.svg"
-              alt="facebook logo"
-              class="col-2 col-md-1 contact-me-icons p-3 mx-2 rounded-lg"
-            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="contact-me-icons mx-2 rounded-lg"
+            >
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              />
+            </svg>
           </a>
-          <a href="https://github.com/J-Roda" target="_blank">
-            <img
-              src="images/svg-logo/github-svgrepo-com.svg"
-              alt="facebook logo"
-              class="col-2 col-md-1 contact-me-icons p-3 mx-2 rounded-lg"
-            />
+          <a
+            href="https://github.com/J-Roda"
+            target="_blank"
+            class="hidden-l logo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="contact-me-icons mx-2 rounded-lg"
+            >
+              <path
+                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"
+              />
+            </svg>
           </a>
-          <a href="https://gitlab.com/jroda" target="_blank">
-            <img
-              src="images/svg-logo/gitlab-svgrepo-com.svg"
-              alt="facebook logo"
-              class="col-2 col-md-1 contact-me-icons p-3 mx-2 rounded-lg"
-            />
+          <a
+            href="https://gitlab.com/jroda"
+            target="_blank"
+            class="hidden-l logo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="contact-me-icons mx-2 rounded-lg"
+            >
+              <path
+                d="M48 32H400C426.5 32 448 53.5 448 80V432C448 458.5 426.5 480 400 480H48C21.5 480 0 458.5 0 432V80C0 53.5 21.5 32 48 32zM382.1 224.9L337.5 108.5C336.6 106.2 334.9 104.2 332.9 102.9C331.3 101.9 329.5 101.3 327.7 101.1C325.9 100.9 324 101.2 322.3 101.8C320.6 102.5 319 103.5 317.8 104.9C316.6 106.3 315.7 107.9 315.2 109.7L285 201.9H162.1L132.9 109.7C132.4 107.9 131.4 106.3 130.2 104.9C128.1 103.6 127.4 102.5 125.7 101.9C123.1 101.2 122.1 100.1 120.3 101.1C118.5 101.3 116.7 101.9 115.1 102.9C113.1 104.2 111.5 106.2 110.6 108.5L65.94 224.9L65.47 226.1C59.05 242.9 58.26 261.3 63.22 278.6C68.18 295.9 78.62 311.1 92.97 321.9L93.14 322L93.52 322.3L161.4 373.2L215.6 414.1C217.1 415.1 220.9 416.9 223.9 416.9C226.9 416.9 229.9 415.1 232.3 414.1L286.4 373.2L354.8 322L355 321.9C369.4 311 379.8 295.8 384.8 278.6C389.7 261.3 388.1 242.9 382.5 226.1L382.1 224.9z"
+              />
+            </svg>
+          </a>
+          <a
+            href="mailto:jayson.roda96@gmail.com"
+            target="_blank"
+            class="hidden-l logo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="contact-me-icons mx-2 rounded-lg"
+            >
+              <path
+                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM218 271.7L64.2 172.4C66 156.4 79.5 144 96 144H352c16.5 0 30 12.4 31.8 28.4L230 271.7c-1.8 1.2-3.9 1.8-6 1.8s-4.2-.6-6-1.8zm29.4 26.9L384 210.4V336c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V210.4l136.6 88.2c7 4.5 15.1 6.9 23.4 6.9s16.4-2.4 23.4-6.9z"
+              />
+            </svg>
           </a>
         </div>
 
         <!-- Contact Me Message -->
         <div class="row m-0 d-flex py-5 justify-content-around">
-          <div class="col-lg-5 col-10">
+          <div class="col-lg-5 col-10 hidden-l">
             <h3>Visit Me</h3>
             <div class="embed-responsive embed-responsive-16by9 rounded-lg">
               <iframe
@@ -519,91 +519,101 @@
               ></iframe>
             </div>
           </div>
-          <div class="col-lg-5 col-md-10 pt-5 pt-lg-0">
+          <div class="col-lg-5 col-md-10 pt-5 pt-lg-0 hidden-r">
             <h3>Send a Message</h3>
             <div class="bg-dark p-3 rounded-lg text-light">
-              <div class="form-group">
-                <label for="fullName">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="fullName"
-                  aria-describedby="fullNameHelp"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="email1">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email1"
-                  aria-describedby="emailHelp"
-                  placeholder="name@example.com"
-                />
-              </div>
-              <div class="form-group">
-                <label for="contactNumber">Message</label>
-                <textarea
-                  class="form-control"
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="5"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                class="btn btn-dark mb-1 px-5 border"
-                data-toggle="modal"
-                data-target="#sendMessageModal"
+              <form
+                id="sendMessageForm"
+                action="https://formspree.io/f/xnqrypqp"
+                method="POST"
               >
-                Send Email
-              </button>
+                <div class="form-group">
+                  <label for="fullName">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    name="Name"
+                    aria-describedby="fullNameHelp"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email1">Email address</label>
+                  <input
+                    type="email"
+                    name="Email"
+                    class="form-control"
+                    id="email1"
+                    aria-describedby="emailHelp"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contactNumber">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="Message"
+                    id="message1"
+                    cols="30"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-dark mb-1 px-5 border"
+                  data-toggle="modal"
+                  data-target="#sendMessageModal"
+                >
+                  Send Email
+                </button>
 
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="sendMessageModal"
-                tabindex="-1"
-                aria-labelledby="sendMessageModal"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5
-                        class="modal-title text-secondary"
-                        id="sendMessageModal"
-                      >
-                        Thank you for contacting us!
-                      </h5>
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body text-secondary">
-                      <h5>Message Successfully Sent</h5>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal"
-                      >
-                        Close
-                      </button>
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="sendMessageModal"
+                  tabindex="-1"
+                  aria-labelledby="sendMessageModal"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title text-secondary"
+                          id="sendMessageModal"
+                        >
+                          Thank you for contacting us!
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-secondary">
+                        <h5>Message Successfully Sent</h5>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- End of Modal -->
+                <!-- End of Modal -->
+              </form>
             </div>
           </div>
         </div>
