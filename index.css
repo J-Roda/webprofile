@@ -88,7 +88,7 @@ body::-webkit-scrollbar-thumb {
 
 .navbar-toggler-icon {
   background-image: url(images/svg-logo/menu-outline.svg) !important;
-  fill: white;
+  stroke: white;
 }
 
 .custom-shadow {
